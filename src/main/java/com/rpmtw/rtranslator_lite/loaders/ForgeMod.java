@@ -13,7 +13,7 @@ import java.util.*;
 /**
  * Support for cpw.mods.modlauncher (Forge).
  * Forge 1.13.2 ~ Latest
- * NeoForged 1.20.2 ~ Latest
+ * NeoForge 1.20.2 ~ Latest
  */
 public class ForgeMod implements ITransformationService {
     @Override

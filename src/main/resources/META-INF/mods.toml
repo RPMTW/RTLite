@@ -11,7 +11,7 @@ authors = "RPMTW TEAM"
 description = '''
 A simple and lightweight mod that provides a traditional Chinese Translation and auto update translation patch feature for Minecraft mods.
 '''
-#logoFile = "logo.png"
+logoFile = "icon.png"
 
 [[dependencies.rtranslator_lite]]
 modId = "forge"

@@ -4,6 +4,7 @@
   "version": "${version}",
   "name": "RTLite",
   "description": "A simple and lightweight mod that provides a Traditional Chinese translation and auto update translation patch feature for Minecraft mods.",
+  "icon": "icon.png",
   "authors": [
     "RPMTW TEAM"
   ],
