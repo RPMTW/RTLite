@@ -42,7 +42,7 @@ public class RTranslatorLite {
         if (!resourcePackDir.toFile().exists()) {
             boolean success = resourcePackDir.toFile().mkdirs();
             if (!success) {
-                RTLiteLogger.error("Failed to create resource pack directory");
+                RTLiteLogger.warn("Failed to create resource pack directory");
                 return null;
             }
         }
@@ -64,7 +64,7 @@ public class RTranslatorLite {
             if (!optionsPath.toFile().exists()) {
                 boolean success = optionsPath.toFile().createNewFile();
                 if (!success) {
-                    RTLiteLogger.error("Failed to create game options file");
+                    RTLiteLogger.warn("Failed to create game options file");
                     return;
                 }
             }

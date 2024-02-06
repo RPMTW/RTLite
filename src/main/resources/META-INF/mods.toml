@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[8,)"
-issueTrackerURL = "https://github.com/RPMTW"
+issueTrackerURL = "https://github.com/RPMTW/RTLite/issues"
 license = "GPL-3"
 
 [[mods]]

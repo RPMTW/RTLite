@@ -9,8 +9,8 @@
   ],
   "contact": {
     "homepage": "https://rpmtw.com",
-    "sources": "https://github.com/RPMTW",
-    "issues": "https://github.com/RPMTW"
+    "sources": "https://github.com/RPMTW/RTLite",
+    "issues": "https://github.com/RPMTW/RTLite/issues"
   },
   "license": "GPL-3",
   "environment": "client",

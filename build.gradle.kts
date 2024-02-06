@@ -15,6 +15,7 @@ repositories {
     maven("https://maven.fabricmc.net")
     maven("https://files.minecraftforge.net/maven")
     maven("https://libraries.minecraft.net")
+    maven("https://maven.quiltmc.org/repository/release")
 }
 
 dependencies {
@@ -24,6 +25,7 @@ dependencies {
     implementation("com.google.code.gson:gson:2.10.1")
 
     implementation("net.fabricmc:fabric-loader:0.15.6") // Fabric Loader
+    implementation("org.quiltmc:quilt-loader:0.23.1") // Quilt Loader
     implementation("cpw.mods:modlauncher:8.1.3") // Forge 1.13.2+
     implementation("net.minecraft:launchwrapper:1.12") // FML/LiteLoader 1.6 ~ 1.12.2
 }

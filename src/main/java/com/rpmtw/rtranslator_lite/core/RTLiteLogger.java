@@ -21,4 +21,8 @@ public class RTLiteLogger {
     public static void error(String message, Throwable t) {
         logger.error(message(message), t);
     }
+
+    public static void warn(String message) {
+        logger.warn(message(message));
+    }
 }

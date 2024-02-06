@@ -6,9 +6,15 @@ import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.loader.api.FabricLoader;
 import net.fabricmc.loader.impl.FabricLoaderImpl;
 import org.jetbrains.annotations.Nullable;
+import org.quiltmc.loader.impl.QuiltLoaderImpl;
 
 import java.nio.file.Path;
 
+/**
+ * Support for fabric-like mod loaders.
+ * Fabric 1.14 ~ Latest
+ * Quilt 1.18.2 ~ Latest
+ */
 public class FabricMod implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
@@ -32,11 +38,19 @@ public class FabricMod implements ClientModInitializer {
 
     @Nullable
     private String getGameVersion() {
+        // Fabric Loader
         try {
             return FabricLoaderImpl.INSTANCE.getGameProvider().getNormalizedGameVersion();
-        } catch (Exception e) {
-            return null;
+        } catch (NoSuchMethodError ignored) {
         }
+
+        // Quilt Loader
+        try {
+            return QuiltLoaderImpl.INSTANCE.getGameProvider().getNormalizedGameVersion();
+        } catch (NoSuchMethodError ignored) {
+        }
+
+        return null;
     }
 
     private boolean hasFabricApi() {
