@@ -1,0 +1,28 @@
+modLoader = "javafml"
+loaderVersion = "[8,)"
+issueTrackerURL = "https://github.com/RPMTW"
+license = "GPL-3"
+
+[[mods]]
+modId = "rtranslator_lite"
+version = "${version}"
+displayName = "RTLite"
+authors = "RPMTW TEAM"
+description = '''
+A simple and lightweight mod that provides a traditional Chinese translation and auto update translation patch feature for Minecraft mods.
+'''
+#logoFile = "logo.png"
+
+[[dependencies.rtranslator_lite]]
+modId = "forge"
+mandatory = true
+versionRange = "[8,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.rtranslator_lite]]
+modId = "minecraft"
+mandatory = true
+versionRange = "[1.6,)"
+ordering = "NONE"
+side = "BOTH"

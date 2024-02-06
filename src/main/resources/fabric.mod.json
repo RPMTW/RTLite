@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "rtranslator_lite",
+  "version": "${version}",
+  "name": "RTLite",
+  "description": "A simple and lightweight mod that provides a traditional Chinese translation and auto update translation patch feature for Minecraft mods.",
+  "authors": [
+    "RPMTW TEAM"
+  ],
+  "contact": {
+    "homepage": "https://rpmtw.com",
+    "sources": "https://github.com/RPMTW",
+    "issues": "https://github.com/RPMTW"
+  },
+  "license": "GPL-3",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.rpmtw.rtranslator_lite.loaders.FabricMod"
+    ]
+  },
+  "suggests": {
+    "modmenu": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.com/invite/5xApZtgV2u"
+      }
+    }
+  }
+}
