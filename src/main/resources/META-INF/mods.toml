@@ -9,7 +9,7 @@ version = "${version}"
 displayName = "RTLite"
 authors = "RPMTW TEAM"
 description = '''
-A simple and lightweight mod that provides a traditional Chinese translation and auto update translation patch feature for Minecraft mods.
+A simple and lightweight mod that provides a traditional Chinese Translation and auto update translation patch feature for Minecraft mods.
 '''
 #logoFile = "logo.png"
 
